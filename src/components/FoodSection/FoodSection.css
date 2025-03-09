@@ -1,0 +1,136 @@
+/* Main Section Styling with Default Background */
+.food-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #1e1e2f;
+    background-image: url("backgrounddonation.png"); /* Default background image for larger screens */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Left Content Styling */
+  .food-content {
+    max-width: 600px;
+    padding: 20px;
+    z-index: 2;
+  }
+  
+  .food-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .heading-underline {
+    width: 50px;
+    height: 4px;
+    background-color: #f16722;
+    margin: 10px 0 20px 0;
+  }
+  
+  .food-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Stats Section */
+  .food-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 30px 0;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  
+  .stat-value {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f16722;
+  }
+  
+  .stat-subtitle {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  /* Button */
+  .food-button {
+    background-color: #f16722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .food-button:hover {
+    background-color: #d85619;
+  }
+  
+  /* Right Image Styling */
+  .food-image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 500px;
+    z-index: 1;
+  }
+  
+  .food-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%; /* Shrink the image size */
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+    transform: translate(10px, 10px); /* Slight offset for alignment */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* For tablet and mobile screens */
+    .food-section {
+      flex-direction: column;
+      background-color: #1e1e2f; /* Replace the background image with color */
+      background-image: none; /* Remove background image */
+      text-align: center;
+    }
+  
+    .food-content {
+      max-width: 100%;
+    }
+  
+    .food-stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .food-image {
+      width: 70%; /* Adjust the image size for smaller screens */
+      transform: translate(0, 0); /* Remove offset on smaller screens */
+    }
+  }
+  

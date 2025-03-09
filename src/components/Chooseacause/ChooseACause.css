@@ -1,0 +1,143 @@
+/* Container for the entire section */
+.choose-cause-container {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  /* Title styling */
+  .choose-cause-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  /* Title underline */
+  .choose-cause-title-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #faa817cc;
+    margin: 0 auto 30px auto;
+    border-radius: 4px;
+  }
+  
+  /* Slider container */
+  .slider-container {
+    position: relative;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+    height: 510px;
+    padding: 10px 0;
+  }
+  
+  /* Slider wrapper */
+  .slider-wrapper {
+    width: 100%;
+    
+    overflow: hidden;
+  }
+  
+  /* Slider track */
+  .slider {
+    display: flex;
+   
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+    padding-top:10px ;
+  }
+  
+  /* Individual cause card */
+  .cause-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 450px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .cause-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Cause image */
+  .cause-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  /* Cause title */
+  .cause-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  /* Cause description */
+  .cause-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Cause link */
+  .cause-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #faa817cc;
+    text-decoration: none;
+  }
+  
+  .cause-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Bottom carousel line */
+  .carousel-line {
+    width: 90%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 20px auto;
+  }
+  
+  /* Slider buttons container */
+  .slider-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Slider buttons */
+  .slider-button {
+    background-color: #faa817cc;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-button:hover {
+    background-color: #faa817;
+  }
+  

@@ -1,0 +1,80 @@
+.video-section {
+    padding: 40px 20px;
+    background: url('./QUOTEbg.png') no-repeat center center / cover; /* Background image */
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+  }
+.quotes{
+    font-size: 100px;
+    color: #faa817;
+    position: absolute;
+    top: 10px;
+    left: 48%;
+    margin-bottom: 10px;
+  }
+  .quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .quote-left,
+  .quote-right {
+    width: 50px;
+    height: 50px;
+    background-color: #faa817;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  }
+  
+  .quote-right {
+    clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+  }
+  
+  .quote-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    max-width: 700px;
+    margin: 0 20px;
+  }
+  
+  .video-container {
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .quote-container {
+      flex-direction: column;
+    }
+  
+    .quote-left,
+    .quote-right {
+      display: none; /* Remove decorative quotes on small screens */
+    }
+  
+    .quote-text {
+      font-size: 16px;
+      margin: 0;
+    }
+  
+    .video-container {
+      height: auto;
+    }
+
+
+    .quotes{
+       display: none;
+      }
+  }
+  @media (max-width: 508px) {
+    .video-section{
+      width: 89%;
+    }
+  }

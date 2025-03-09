@@ -1,0 +1,85 @@
+/* General container styles */
+.temple-schedule-container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Make container a flexbox */
+    flex-direction: column; /* Ensure items stack vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  /* Header styles */
+  .temple-schedule-header {
+    background-color: #f39c12;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .temple-schedule-header h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Closed times description */
+  .temple-closed-times {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Center schedule items in the container */
+  .temple-schedule-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  @media (max-width: 768px) {
+    .temple-schedule-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Schedule list styles */
+  .temple-schedule-item {
+    display: flex;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    justify-content: center; /* Center each item's content */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .temple-schedule-time {
+    font-size: 18px;
+    color: #333;
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .temple-schedule-details {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .temple-schedule-title {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .temple-schedule-description {
+    font-size: 14px;
+    color: #666;
+  }
+  

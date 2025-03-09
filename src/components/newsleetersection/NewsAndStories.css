@@ -1,0 +1,114 @@
+/* Section Styling */
+.news-stories-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 40px 20px;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .left-column,
+  .right-column {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+  }
+  
+  .left-column {
+    text-align: left;
+  }
+  
+  .right-column {
+    text-align: left;
+  }
+  
+  /* Divider Line */
+  .divider {
+    width: 10px; /* Adjusted width */
+    height: 300px; /* Adjusted height */
+    background-color: #faa817;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #faa817;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  
+  /* Left Column Content */
+  .news-date {
+    font-size: 14px;
+    color: #faa817;
+    margin-bottom: 10px;
+  }
+  
+  .news-description {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .read-more {
+    font-size: 16px;
+    font-weight: bold;
+    color: #faa817;
+    text-decoration: none;
+  }
+  
+  /* Right Column Content */
+  .story-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .story-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .story-content {
+    flex: 1;
+  }
+  
+  .story-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #faa817;
+    margin-bottom: 10px;
+  }
+  
+  .story-description {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .news-stories-section {
+      flex-direction: column;
+    }
+  
+    .divider {
+      width: 100%; /* Full width for horizontal line */
+      height: 19px; /* Adjusted height for horizontal line */
+      margin: 20px 0; /* Add margin for spacing */
+    }
+  }
+  

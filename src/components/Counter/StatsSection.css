@@ -1,0 +1,48 @@
+/* Container for the stats section */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 20px;
+    flex-wrap: wrap; /* Makes it responsive */
+    background-color: #fff;
+  }
+  
+  /* Individual stat box */
+  .stat-box {
+    background-color: white;
+    border: 1px solid #FAA817CC;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Fixed width for consistency */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .stat-box:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+  
+  /* Counter value */
+  .stat-value {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FAA817CC;
+    margin: 0;
+  }
+  
+  /* Label text */
+  .stat-label {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .stat-box {
+      width: 90%; /* Full width on small screens */
+    }
+  }

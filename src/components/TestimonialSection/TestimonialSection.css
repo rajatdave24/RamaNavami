@@ -1,0 +1,129 @@
+/* Testimonial Section Styling */
+.testimonial-section {
+    padding: 40px 20px;
+    background-color: #f16d2d;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Left Side */
+  .testimonial-text {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .testimonial-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-underline {
+    width: 80px;
+    height: 4px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-content {
+    position: relative;
+  }
+  
+  .testimonial-quote {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: -20px;
+  }
+  
+  .testimonial-quote-close {
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+  }
+  
+  .testimonial-text-content {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 40px 0;
+  }
+  
+  .testimonial-author {
+    margin-top: 20px;
+  }
+  
+  .author-name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .author-profession {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Buttons */
+  .testimonial-buttons {
+    margin-top: 20px;
+  }
+  
+  .testimonial-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .testimonial-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Right Side */
+  .testimonial-image {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-slide {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .testimonial-container {
+      flex-direction: column;
+    }
+  
+    .testimonial-text,
+    .testimonial-image {
+      max-width: 100%;
+    }
+  
+    .testimonial-title {
+      text-align: center;
+    }
+  }
+  
