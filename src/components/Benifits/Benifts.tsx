@@ -11,11 +11,11 @@ const testimonials = [
     source: "- Bhagavad-gita, 17.20",
   },
   {
-    text: "The auspicious occasions of Kumbha Mela and Rama Navami, the holy place of Prayagraj and spiritually oriented pilgrims of Kumbha Mela are the perfect combination for charity.",
+    text: "The auspicious occasions of Kumbha Mela and Makara Sankranti, the holy place of Prayagraj and spiritually oriented pilgrims of Kumbha Mela are the perfect combination for charity.",
     source: "",
   },
   {
-    text: "Please use the Twin Opportunity of Kumbha Mela and Rama Navami to make an auspicious beginning this year. Kindly contribute generously for the free food distribution.",
+    text: "Please use the Twin Opportunity of Kumbha Mela and Makara Sankranti to make an auspicious beginning this year. Kindly contribute generously for the free food distribution.",
     source: "",
   },
 ];
@@ -34,10 +34,10 @@ const TestimonialCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="testimonial-carousel" style={{backgroundColor:'White'}}>
-      <div className="testimonial-container">
-        <p className="testimonial-text">{testimonials[currentIndex].text}</p>
-        <p className="testimonial-source">{testimonials[currentIndex].source}</p>
+    <div className="testimonial-benefirs-carousel" style={{backgroundColor:'White'}}>
+      <div className="testimonial-benefirs-container">
+        <p className="testimonial-benefirs-text">{testimonials[currentIndex].text}</p>
+        <p className="testimonial-benefirs-source">{testimonials[currentIndex].source}</p>
       </div>
     </div>
   );

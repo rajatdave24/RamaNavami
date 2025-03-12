@@ -2,15 +2,23 @@ import {createBrowserRouter,} from "react-router-dom";
 import {
     CampaignDetailsPage,
     CampaignsPage,
-    CreateCampaignPage,
+   BhagwatGeeta,
     DashboardPage,
     DetailError404Page,
     Error404Page,
     HomePage,
     HowItWorksPage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    Alldonation,
+   AnnaDan,
+   DailyDetiSeva,
+   CowServices,
+   VidyaDaan,
+   NityaUtsav
 } from "../pages";
+
+
 import {DashboardLayout, PublicLayout} from "../layout";
 
 const router = createBrowserRouter([
@@ -66,6 +74,104 @@ const router = createBrowserRouter([
         ]
     },
     {
+        path: "all-donation",
+        
+        element: <PublicLayout/>,
+        errorElement: <Error404Page/>,
+        children: [
+            {
+                path: "",
+                index: true,
+                element: <Alldonation/>,
+                errorElement: <Error404Page/>,
+            }
+        ]
+    },
+    {
+        path: "all-donation/anna-daan-seva",
+        
+        element: <PublicLayout/>,
+        errorElement: <Error404Page/>,
+        children: [
+            {
+                path: "",
+                index: true,
+                element: <AnnaDan/>,
+                errorElement: <Error404Page/>,
+            }
+        ]
+    },
+    {
+        path: "all-donation/cow-services",
+        element: <PublicLayout/>,
+        errorElement: <Error404Page/>,
+        children: [
+            {
+                path: "",
+                index: true,
+                element: <CowServices/>,
+                errorElement: <Error404Page/>,
+            }
+        ]
+    },
+    {
+        path: "all-donation/bhagwat-geeta-distribution",
+        
+        element: <PublicLayout/>,
+        errorElement: <Error404Page/>,
+        children: [
+            {
+                path: "",
+                index: true,
+                element: <BhagwatGeeta/>,
+                errorElement: <Error404Page/>,
+            }
+        ]
+    },
+    {
+        path: "all-donation/daily-deti-seeva",
+        
+        element: <PublicLayout/>,
+        errorElement: <Error404Page/>,
+        children: [
+            {
+                path: "",
+                index: true,
+                element: <DailyDetiSeva/>,
+                errorElement: <Error404Page/>,
+            }
+        ]
+    },
+    {
+        path: "all-donation/vidya-daan",
+        
+        element: <PublicLayout/>,
+        errorElement: <Error404Page/>,
+        children: [
+            {
+                path: "",
+                index: true,
+                element: <VidyaDaan/>,
+                errorElement: <Error404Page/>,
+            }
+        ]
+    },
+    
+    {
+        path: "all-donation/nitya-utsav-daan",
+        
+        element: <PublicLayout/>,
+        errorElement: <Error404Page/>,
+        children: [
+            {
+                path: "",
+                index: true,
+                element: <NityaUtsav/>,
+                errorElement: <Error404Page/>,
+            }
+        ]
+    },
+    {
         path: "dashboard",
         element: <DashboardLayout/>,
         errorElement: <Error404Page/>,
@@ -77,18 +183,7 @@ const router = createBrowserRouter([
             }
         ]
     },
-    {
-        path: "create-campaign",
-        element: <DashboardLayout/>,
-        errorElement: <Error404Page/>,
-        children: [
-            {
-                path: '',
-                index: true,
-                element: <CreateCampaignPage/>
-            }
-        ]
-    },
+    
 ]);
 
 

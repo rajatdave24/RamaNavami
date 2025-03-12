@@ -4,21 +4,21 @@ import "./VideoSectionandImage.css";
 
 const NewsSection: React.FC = () => {
   const images = [
-    "https://via.placeholder.com/300x200?text=Image+1",
-    "https://via.placeholder.com/300x200?text=Image+2",
-    "https://via.placeholder.com/300x200?text=Image+3",
-    "https://via.placeholder.com/300x200?text=Image+4",
-    "https://via.placeholder.com/300x200?text=Image+5",
-    "https://via.placeholder.com/300x200?text=Image+6",
+    "https://www.google.com/imgres?q=iskcon%20juhu%20events&imgurl=x-raw-image%3A%2F%2F%2F488506cd1028ebb8e2cb731c0703204daaa5a2ac04b7421661bfa55d9836ca73&imgrefurl=https%3A%2F%2Fwww.iskconmumbai.com%2Ffestival-darshan&docid=aBKj02pCpiQGpM&tbnid=uOsoEM0GhUjZtM&vet=12ahUKEwjB3IetquuKAxUNoWMGHeIoHLEQM3oECGYQAA..i&w=1920&h=1280&hcb=2&ved=2ahUKEwjB3IetquuKAxUNoWMGHeIoHLEQM3oECGYQAA",
+    "https://iskconmumbaipull-21250.kxcdn.com/web/image/6145-3c8a8051/WhatsApp%20Image%202024-12-30%20at%2017.45.36.webp",
+    "https://iskconmumbaipull-21250.kxcdn.com/web/image/754-b9546ab2/glimplse1.webp?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501",
+    "",
+    "",
+    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fiskconkirtanministry.com%2Fiskcon-juhu%2F&psig=AOvVaw3trk4YUNLs81lobOFTfha9&ust=1736604587528000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjywLaq64oDFQAAAAAdAAAAABA5",
   ];
 
   const videos = [
-    "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "https://www.youtube.com/watch?v=tgbNymZ7vqY",
-    "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
-    "https://www.youtube.com/watch?v=9bZkp7q19f0",
-    "https://www.youtube.com/watch?v=FJ3N_2r6R-o",
-    "https://www.youtube.com/watch?v=1w7OgIMMRc4",
+    "https://youtu.be/kRFsJEs2JJs?si=z-jG_Kjr_7iR9W3",
+    "https://youtu.be/qh5AFZP16nY?si=tg52zot4MFTSexaL",
+    "hhttps://youtu.be/-oDsjbxfRSM?si=huT_XIFHKi2SToBH",
+    "https://youtu.be/S-TrNI70uWE?si=Dgkwi9-EsN-nwpaB",
+    "https://youtu.be/AGCPJNPUr2c?si=l_HEV9qMhxspEP8i",
+    "https://youtu.be/BC5zzW5FcoM?si=so0yVcKfLVfk2-VQ",
   ];
 
   const [imageIndex, setImageIndex] = useState(0);
@@ -58,7 +58,7 @@ const NewsSection: React.FC = () => {
       <div className="news-underline"></div>
 
       {/* Image Section */}
-      <div className="slider-section">
+      {/* <div className="slider-section">
      
         <div className="slider-wrapper-container">
           <div className="slider-wrapper">
@@ -77,30 +77,25 @@ const NewsSection: React.FC = () => {
           <div className="slider-buttons">
             <button
               className="slider-button prev"
-              onClick={() => handlePrev("image")}
+              onClick={() => handlePrev("video")}
             >
               &#8249;
             </button>
             <button
               className="slider-button next"
-              onClick={() => handleNext("image")}
+              onClick={() => handleNext("video")}
             >
               &#8250;
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Video Section */}
       <div className="slider-section">
       
         <div className="slider-container">
-          <button
-            className="slider-button prev"
-            onClick={() => handlePrev("video")}
-          >
-            &#8249;
-          </button>
+         
           <div className="slider-wrapper">
             {videos
               .slice(videoIndex, videoIndex + visibleCards)
@@ -117,12 +112,20 @@ const NewsSection: React.FC = () => {
                 </div>
               ))}
           </div>
-          <button
-            className="slider-button next"
-            onClick={() => handleNext("video")}
-          >
-            &#8250;
-          </button>
+          <div className="slider-buttons" style={{marginTop:'10px'}}>
+            <button
+              className="slider-button prev"
+              onClick={() => handlePrev("video")}
+            >
+              &#8249;
+            </button>
+            <button
+              className="slider-button next"
+              onClick={() => handleNext("video")}
+            >
+              &#8250;
+            </button>
+        </div>
         </div>
       </div>
     </section>

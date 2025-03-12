@@ -53,21 +53,21 @@ const HomePage = (): JSX.Element => {
                 <title>ISKCON Juhu</title>
             </Helmet>
             <Box>
-                {/* <HeroSection/>
-                <TempleSchedule/>
+                 {/* <HeroSection/> */}
+                {/* <TempleSchedule/>
                 <StatsCountertsx/>
                 <ChooseACause/>
-                <FoodSection/> */}
-                <BackgroundSwitcher/>
+                <FoodSection/>  */}
+                <BackgroundSwitcher/> 
                 <DonationSection/>
-                <KumbhMela/>
-               {/* X/ <ProcessSection/> */}
+                {/* <KumbhMela/>
+                <ProcessSection/>  */}
                 <Benifits/>
                 <VideoSection/>
                 <Gallery/>
-                {/* <VideoSectionandImage/> */}
-                {/* <TestimonialSection/>
-                <NewsAndStories/> */}
+               <VideoSectionandImage/> 
+              <TestimonialSection/>
+              <NewsAndStories/> 
                 <Footer/>
             </Box>
         </>

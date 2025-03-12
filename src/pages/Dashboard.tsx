@@ -14,6 +14,7 @@ import {
     Text,
     Title,
     TitleProps
+
 } from "@mantine/core";
 import {
     IconArrowDownRight,
@@ -197,7 +198,9 @@ const DashboardPage = () => {
                             <Card.Section></Card.Section>
                         </Paper>
                         <Paper {...paperProps}>
-                            <Title {...subTitleProps}>Donations per Category</Title>
+                            <Title {...subTitleProps}>
+                                Donations per Category
+                                </Title>
                             <YearlyDonationChart/>
                         </Paper>
                     </Stack>

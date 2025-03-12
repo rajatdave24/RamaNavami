@@ -6,10 +6,7 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex; /* Make container a flexbox */
-    flex-direction: column; /* Ensure items stack vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
+    
   }
   
   /* Header styles */
@@ -38,7 +35,7 @@
   /* Center schedule items in the container */
   .temple-schedule-columns {
     
-    justify-content: center; /* Center items horizontally */
+   
   }
   
   @media (max-width: 768px) {
@@ -89,5 +86,9 @@ font-weight: 500;
     .temple-schedule-container {
       width: 89%;
     }
+    .pKumps{
+      font-size: 20px;
+      font-weight: 500;
+        }
   }
   

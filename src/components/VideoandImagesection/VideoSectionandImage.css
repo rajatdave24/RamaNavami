@@ -5,6 +5,7 @@
     font-family: "Poppins", sans-serif;
     text-align: center;
     overflow: hidden;
+    height: 60vh;
   }
   
   .news-title {
@@ -129,3 +130,6 @@
       width: 89%;
     }
   }
+
+
+

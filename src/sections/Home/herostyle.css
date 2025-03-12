@@ -1,0 +1,17 @@
+.hero-heading {
+    background-color: #FAA817;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .hero-heading {
+    font-size: 40px;
+    text-align: center;
+    }
+  }

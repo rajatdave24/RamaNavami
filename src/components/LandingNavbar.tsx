@@ -130,41 +130,38 @@ const useStyles = createStyles((theme) => ({
 
 const mockdata = [
     {
-        icon: IconClipboardHeart,
-        title: 'Medical',
+        
+        title: 'Anna Daan Seeva',
     },
     {
-        icon: IconSos,
-        title: 'Emergency',
+       
+        title: 'Cow Service',
     },
     {
-        icon: IconLeaf,
-        title: 'Environment',
+       
+        title: 'Deity Seva',
     },
     {
-        icon: IconHeartHandshake,
-        title: 'Nonprofit',
+        
+        title: 'Vashnav Bhojan',
     },
     {
-        icon: IconReportMoney,
-        title: 'Financial emergency',
+        
+        title: 'Temple Donation',
     },
     {
-        icon: IconCat,
-        title: 'Animals',
+       
+        title: 'Bhaktivedanta Swami Goshala',
     },
     {
-        icon: IconFireHydrant,
-        title: 'Crisis Relief',
+       
+        title: 'Bhagavad Gita Distribution',
     },
     {
-        icon: IconAugmentedReality,
-        title: 'Technology',
+       
+        title: ' Daily Deity Seva',
     },
-    {
-        icon: IconDeviceTv,
-        title: 'Film & Videos',
-    },
+    
 ];
 
 interface IProps extends BoxProps {
@@ -172,9 +169,9 @@ interface IProps extends BoxProps {
 }
 
 const LandingNavbar = ({compressed}: IProps) => {
-    // const [drawerOpened, {toggle: toggleDrawer, close: closeDrawer}] = useDisclosure(false);
-    // const [linksOpened, {toggle: toggleLinks}] = useDisclosure(false);
-    // const [searchOpened, {toggle: toggleSearchDrawer, close: closeSearchDrawer}] = useDisclosure(false);
+    const [drawerOpened, {toggle: toggleDrawer, close: closeDrawer}] = useDisclosure(false);
+    const [linksOpened, {toggle: toggleLinks}] = useDisclosure(false);
+    const [searchOpened, {toggle: toggleSearchDrawer, close: closeSearchDrawer}] = useDisclosure(false);
     const {classes, theme} = useStyles();
     const [stickyClass, setStickyClass] = useState(false);
     const matchesMobile = useMediaQuery('(max-width: 768px)');
@@ -182,9 +179,7 @@ const LandingNavbar = ({compressed}: IProps) => {
     const links = mockdata.map((item) => (
         <UnstyledButton className={classes.subLink} key={item.title}>
             <Group noWrap align="center">
-                <ThemeIcon size={34} variant="default" radius="md">
-                    <item.icon size={rem(22)} stroke={1.5} color={theme.fn.primaryColor()}/>
-                </ThemeIcon>
+               
                 <div>
                     <Text size="sm" fw={500}>
                         {item.title}
@@ -216,6 +211,113 @@ const LandingNavbar = ({compressed}: IProps) => {
 
     return (
         <></>
+        // <Box
+        //     mt={compressed ? (stickyClass ? 0 : "xl") : 0}
+        //     sx={{
+        //         transition: "all ease 150ms",
+        //         position: "fixed",
+        //         top: '3%',
+        //         left: '50%',
+        //         transform: 'translate(-50%, -50%)',
+        //         zIndex: 2,
+        //         margin: "auto",
+        //         width: compressed ? (stickyClass ? "100%" : "85%") : "100%",
+        //         boxShadow: theme.shadows.sm,
+        //     }}>
+        //     <Header
+        //         height={60}
+        //         px="md"
+        //         sx={{
+        //             backgroundColor: stickyClass ? 'rgba( 255, 255, 255, .9 )' : theme.white,
+        //             backdropFilter: 'blur(4px)',
+        //             borderRadius: stickyClass ? 0 : theme.radius.sm
+        //         }}>
+        //         <Container size="lg" fluid={compressed} sx={{height: '100%'}}>
+        //             <Flex justify="space-between" align="center" sx={{height: '100%'}}>
+        //                 <BrandName size={28} asLink/>
+        //                 <Flex align="center" gap="xs" sx={{height: '100%'}} className={classes.hiddenMobile}>
+                           
+        //                      <Button component={Link} to="/" className={classes.link} {...buttonProps}>
+        //                        Home
+        //                     </Button>
+        //                     {/* <Button component={Link} to="/all-donation" className={classes.link} {...buttonProps}>
+        //                                     Donate
+        //                     </Button>
+                            
+                            
+        //                     <Button component={Link} to="/dashboard" className={classes.link} {...buttonProps}>
+        //                        Events
+        //                     </Button>
+
+        //                     <Button component={Link} to="/create-campaign" className={classes.link} {...buttonProps}>
+        //                         Contact Us
+        //                     </Button>
+
+        //                     <Button
+        //                         leftIcon={<IconSearch size={18} className={classes.linkIcon}/>}
+        //                         onClick={toggleSearchDrawer}
+        //                         className={classes.link}
+        //                         {...buttonProps}
+        //                     >
+        //                         Search
+        //                     </Button>  */}
+        //                 </Flex>
+        //                 <Burger opened={drawerOpened} onClick={toggleDrawer} className={classes.hiddenDesktop}/>
+        //             </Flex>
+        //         </Container>
+        //     </Header>
+
+        //     <Drawer
+        //         opened={drawerOpened}
+        //         onClose={closeDrawer}
+        //         size="100%"
+        //         padding="md"
+        //         title="Navigation"
+        //         className={classes.hiddenDesktop}
+        //         zIndex={1000000}
+        //     >
+        //         <ScrollArea h={`calc(100vh - ${rem(0)})`} mx="-md">
+        //             <Divider my="sm" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'}/>
+
+        //             <Button component={Link} to="/" className={classes.link} {...buttonProps}>
+        //                 Home
+        //             </Button>
+        //             {/* <Button component={Link} to="/campaigns" className={classes.link} {...buttonProps}>
+        //                Blog
+        //             </Button>
+                    
+        //             <UnstyledButton className={classes.link} onClick={toggleLinks}>
+        //                 <Center inline>
+        //                     <Box component="span" mr={5}>
+        //                         Donate
+        //                     </Box>
+                           
+        //                 </Center>
+        //             </UnstyledButton>
+        //             <Collapse in={linksOpened}>{links}</Collapse>
+
+        //             <Button component={Link} to="/create-campaign" className={classes.link} {...buttonProps}>
+        //                Contact Us
+        //             </Button>
+        //             <Button component={Link} to="/dashboard" className={classes.link} {...buttonProps}>
+        //                Events
+        //             </Button>
+        //             <Button
+        //                 leftIcon={<IconSearch size={18}/>}
+        //                 onClick={() => {
+        //                     closeDrawer()
+        //                     toggleSearchDrawer();
+        //                 }}
+        //                 className={classes.link}
+        //                 {...buttonProps}
+        //             >
+        //                 Search
+        //             </Button> */}
+        //         </ScrollArea>
+        //     </Drawer>
+
+        //     <SearchDrawer opened={searchOpened} onClose={closeSearchDrawer}/>
+        // </Box>
     );
 }
 

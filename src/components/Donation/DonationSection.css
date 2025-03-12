@@ -197,3 +197,74 @@
       text-align: center;
   }
 }
+
+
+/* blessing  */
+
+/* Container */
+/* Container Styling */
+.blessings-container {
+  background: #fff5e1; /* Soft spiritual color */
+  border: 2px solid #e3b04b;
+  border-radius: 12px;
+  padding: 20px;
+  max-width:90%;
+  margin: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Title Styling */
+.blessings-title {
+  font-size: 1.8rem;
+  color: #b56a00;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Preview (Collapsed) */
+.blessings-preview {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Read More Button */
+.read-more-btn {
+  display: inline-block;
+  color: #d2691e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.read-more-btn:hover {
+  color: #b56a00;
+  text-decoration: underline;
+}
+
+/* Full Content (Initially Hidden) */
+.full-content {
+  display: none;
+}
+
+/* Expanded State */
+.expanded .full-content {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

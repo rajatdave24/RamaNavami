@@ -20,7 +20,7 @@ const VideoSection: React.FC = () => {
       {/* Video Section */}
       <div className="video-container">
         <ReactPlayer
-          url="https://youtu.be/uD_GcS-CEFA?si=NjjJ372I7hvxKPT6" // Replace with your YouTube URL
+          url="https://youtu.be/hyjBNjd4HXo" // Replace with your YouTube URL
           controls
           width="100%"
           height="400px"

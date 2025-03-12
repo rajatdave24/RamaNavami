@@ -7,8 +7,13 @@ import DetailError404Page from "./DetailError404";
 import LoginPage from "./Login";
 import SignupPage from "./Signup";
 import DashboardPage from "./Dashboard";
-import CreateCampaignPage from "./CreateCampaign";
-
+import BhagwatGeeta from "./BhagwaatGeeta.tsx";
+import Alldonation from "./Alldonation.tsx";
+import AnnaDan from "./AnnaDaan.tsx";
+import CowServices from "./CowServices.tsx";
+import DailyDetiSeva from "./DailyDetiSeva.tsx";
+import VidyaDaan from "./VidyaDaan.tsx"
+import NityaUtsav from "./NityaUtsav.tsx"
 export {
     HomePage,
     Error404Page,
@@ -19,5 +24,11 @@ export {
     LoginPage,
     SignupPage,
     DashboardPage,
-    CreateCampaignPage
+    BhagwatGeeta,
+    Alldonation,
+    AnnaDan,
+    NityaUtsav,
+    DailyDetiSeva,
+    CowServices,
+    VidyaDaan
 }

@@ -15,7 +15,7 @@ const DashboardLayout = () => {
                 }}
                 navbarOffsetBreakpoint="sm"
                 asideOffsetBreakpoint="sm"
-                navbar={<></>}
+                navbar={<><AppNavbar/></>}
                 header={<AppNavbar/>}
             >
                 <Outlet/>

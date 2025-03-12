@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
   
         </div>
         <div className="footer-copyright">
-          <p>Copyright © 2024 ISKCON JUHU. All Rights Reserved.</p>
+          <p>Copyright © 2025 ISKCON JUHU. All Rights Reserved. Created By Satyam Gupta </p>
         </div>
         <div className="footer-links-bottom">
           <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>

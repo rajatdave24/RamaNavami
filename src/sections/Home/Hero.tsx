@@ -3,6 +3,7 @@ import {IconRocket} from "@tabler/icons-react";
 import {Link} from "react-router-dom";
 import iskconbannerbg from "../../assets/img/Group37.png";
 import iskcondonate from "../../assets/logos/Slice1.png"
+import "./herostyle.css";
 const useStyles = createStyles((theme) => ({
     wrapper: {
         position: 'relative',
@@ -131,14 +132,8 @@ const HeroSection = () => {
                         
                        
                        
-                        <span style={{
-           backgroundColor:'#FAA817',
-           paddingLeft:'15px',
-           paddingRight:'15px',
-           borderRadius:'20px',
-           fontSize:'50px',
-           fontWeight:'bold',
-           color:'white'
+                        <span className='hero-heading' style={{
+           
         }}>    Sri Sri Radha Rasabihari Mandir </span>
                         
                     </Stack>

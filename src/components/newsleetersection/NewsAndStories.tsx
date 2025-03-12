@@ -1,6 +1,6 @@
 import React from "react";
 import "./NewsAndStories.css";
-
+import hunger from "./assets/Global_Hunger_Index.jpg"
 const NewsAndStories: React.FC = () => {
   return (
     <section className="news-stories-section">
@@ -19,21 +19,19 @@ const NewsAndStories: React.FC = () => {
       <div className="divider"></div>
 
       <div className="right-column">
-        <h2 className="section-title">ISKCON JUHU STORIES</h2>
+        <h2 className="section-title">ISKCON Food for Child</h2>
         <div className="section-underline"></div>
         <div className="story-container">
           <img
-            src="https://via.placeholder.com/100"
+            src={hunger}
             alt="Icon"
             className="story-icon"
+            style={{borderRadius:'5px'}}
           />
           <div className="story-content">
-            <h3 className="story-title">Transparent Charity</h3>
+           
             <p className="story-description">
-              Transparent Charity: Your donations are solely used to cover the
-              preparation, distribution, and management costs. When you support
-              us, you will know for a fact that the fund is used to help those
-              in need and are accountable to the government for the same.
+            Hunger is the worst form of violation of Human Rights," said Kofi Annan, former Secretary General of United Nations.
             </p>
             <a href="#" className="read-more">
               Read More {">"}

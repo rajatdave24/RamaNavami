@@ -18,7 +18,7 @@ const FileDropzone = ({label, description, ...others}: IFileInputProps) => {
             maxSize={3 * 1024 ** 2}
             accept={IMAGE_MIME_TYPE}
             {...others}
-        >
+>
             <Group
                 position="center"
                 spacing="xl"
