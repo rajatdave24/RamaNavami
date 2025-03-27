@@ -47,7 +47,7 @@ const TestimonialSection: React.FC = () => {
           <div className="testimonial-content">
            
             <p className="testimonial-text-content">
-            <span className="" style={{fontSize:'60px',fontWeight:'bolder'}}>“</span> <p>{testimonials[currentIndex].text} </p><span className="" style={{fontSize:'60px',fontWeight:'bolder'}}>”</span>
+            <span className="" style={{display:'inline-flex',fontSize:'60px',fontWeight:'bolder',width:'10px',height:'5px'}}>“</span> <p style={{margin:'0px'}}>{testimonials[currentIndex].text} </p><span className="" style={{display:'inline-flex',fontSize:'60px',fontWeight:'bolder',width:'10px',height:'5px'}}>”</span>
             </p>
            
           </div>

@@ -86,7 +86,7 @@ const DonateModal: React.FC<DonateModalProps> = ({ isOpen, onClose, onDonate,  m
 
   if (!isOpen) return null;
 
-  return (
+  return <>{(
     <div style={styles.overlay}>
       <div style={styles.modal}>
         <h2>Donate Now</h2>
@@ -135,7 +135,7 @@ const DonateModal: React.FC<DonateModalProps> = ({ isOpen, onClose, onDonate,  m
         </form>
       </div>
     </div>
-  );
+  )}</>
 };
 
 const styles: { [key: string]: React.CSSProperties } = {

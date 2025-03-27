@@ -247,9 +247,11 @@
 }
 
 /* Full Content (Initially Hidden) */
-.full-content {
+/*removed for always displaying content without Read-More in DonationSection.tsx*/
+/* .full-content {
   display: none;
-}
+} */
+ 
 
 /* Expanded State */
 .expanded .full-content {
@@ -266,5 +268,39 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width:769px) {
+  .meal-option{
+    display: flex;
+    justify-content: space-around;
+    gap: 20vw;
+  }
+  .add-donation-button{
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 655px){
+  .meal-option{
+    gap: 16vw;
+  }
+}
+
+@media screen and (max-width: 578px){
+  .meal-option{
+    gap: 7vw;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .meal-option{
+    gap: 0px;
+  }
+
+  .add-donation-button{
+    width: 110.78px !important;
+    margin: 3.5vw;
   }
 }

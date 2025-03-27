@@ -8,12 +8,12 @@ const VideoSection: React.FC = () => {
       {/* Quote Section */}
       <div className="quote-container">
       
-        <h3 className="quote-text">
+        {/* <h3 className="quote-text">
           <span className="quotes">""</span><br></br>
           Out of compassion towards our fellow living beings, we are committed   
           to making a difference in their lives. 
         
-        </h3>
+        </h3> */}
        
       </div>
 

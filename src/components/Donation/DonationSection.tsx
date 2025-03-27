@@ -42,7 +42,7 @@ const DonationSection: React.FC = () => {
     <section className="donation-section">
       {/* Header */}
 
-      <h1 className="donation-title">Donation For Rama Navmi</h1>
+      <h1 className="donation-title">Blessings of Lord Ram</h1>
 
       <div className="title-underline"></div>
 
@@ -155,7 +155,7 @@ const DonationSection: React.FC = () => {
       )}
     </div>
       </div>
-      <h2 className="meal-donation-title">Donate for Rama Navmi Anna Daan</h2>
+      <h2 className="meal-donation-title">Ram Navmi Anna Daan Donation</h2>
     
       <div className="meal-options">
     
@@ -182,7 +182,7 @@ const DonationSection: React.FC = () => {
       </div>
 
       <div className="custome-donation" style={{background:'white',borderRadius:'10px',padding:'50px',marginTop:'10px'}}>
-  <h3 style={{marginBottom:'10px'}}>Any Donation of Your Choice for Rama Navmi Anna Daan</h3>
+  <h3 style={{marginBottom:'10px'}}>Any other donation</h3>
   <input type="number" style={{width:'70%',borderRadius:'5px',marginRight:'10px',border:'1px solid',height:'50px',fontSize:'25px',fontWeight:'500',padding:'5px',marginTop:'10px'}} value={selectedPrice} onChange={handleInputChange} placeholder="Enter the Amount"></input>
   <button style={{backgroundColor: '#faa817',color: '#fff',border: 'none',padding: '10px 15px',borderRadius: '5px',cursor: 'pointer',height:'63px',fontSize:'25px',marginTop:'10px'}}  onClick={() => openModalWithAnyPrice()}>Donate</button>
 </div>
@@ -205,7 +205,7 @@ const DonationSection: React.FC = () => {
 
   
    
-      <h2 className="meal-donation-title">Rama Navami Kalash Daan</h2>
+      <h2 className="meal-donation-title">Rama Navami Kalash Abhishek Donation</h2>
       
       <div className="meal-options">
       
@@ -217,7 +217,7 @@ const DonationSection: React.FC = () => {
             <p></p>
             <p className="meal-label">{meal.label}</p>
             <p><div className={`blessings-container ${expanded ? "expanded" : ""}`}>
-            <h3 className="blessings-title">🙏 Maha-Abhishek  🙏</h3>
+            {/* <h3 className="blessings-title">🙏 Maha-Abhishek  🙏</h3> */}
       
       {/* Short Preview */}
       {!expanded && (
@@ -227,14 +227,14 @@ const DonationSection: React.FC = () => {
 
           </p>
           
-          <span className="read-more-btn" onClick={toggleExpand} onMouseEnter={toggleExpand}>
+          {/* <span className="read-more-btn" onClick={toggleExpand} onMouseEnter={toggleExpand}>
             Read More ⬎
-          </span>
+          </span> */}
         </p>
       )}
 
       {/* Full Content (Hidden Initially) */}
-      {expanded && (
+      {!expanded && (
         <div className="full-content">
        
 
@@ -254,7 +254,7 @@ const DonationSection: React.FC = () => {
 
 The donation to perform Kalash Maha Abhishek Seva is Rs 41,000/-. There is only limited number of Maha Abhishek Sevas. So you may either rush your filled-in donation form along with the donation, or book your Maha Abhishek Seva by phoning Pranav on 6263756519, or by sending an e-mail to bhisma@iskcontrust.org.
           </p>
-          <p className="meal-price">₹{meal.price}</p>
+          <p className="meal-price" style={{color:'blue'}}>₹{meal.price}</p>
             <button className="add-donation-button" onClick={() => openModalWithPrice(meal.price)} >
               
 Add Donation</button>
@@ -294,7 +294,7 @@ Add Donation</button>
 
       {/* Receipt Information */}
       <div className="receipt-info">
-        <h3 className="receipt-title">Receipts for your donation</h3>
+        <h3 className="receipt-title">Receipt for your donation</h3>
         <p>
           80G available as per Income Tax Act 1961 and rules made thereunder.
           Tax Exemption Certificate Ref. No.: AAATI0017PF20219

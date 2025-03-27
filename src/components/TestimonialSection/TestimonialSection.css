@@ -1,6 +1,6 @@
 /* Testimonial Section Styling */
 .testimonial-section {
-    padding: 40px 20px;
+    padding: 0px 20px;
     background-color: #f16d2d;
     font-family: "Poppins", sans-serif;
     color: #ffffff;
@@ -17,7 +17,7 @@
   /* Left Side */
   .testimonial-text {
     flex: 1;
-    max-width: 50%;
+    max-width: 70%;
     padding: 20px;
   }
   
@@ -55,12 +55,15 @@
   
   .testimonial-text-content {
     font-size: 16px;
-    line-height: 1.8;
-    margin: 40px 0;
+    margin: 0px;
+    width:fit-content;
+    height: fit-content;
+    /* line-height: 1.8; */
+    /* margin: 40px 0; */
   }
   
   .testimonial-author {
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   
   .author-name {
@@ -97,15 +100,15 @@
   /* Right Side */
   .testimonial-image {
     flex: 1;
-    max-width: 40%;
+    max-width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .image-slide {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
