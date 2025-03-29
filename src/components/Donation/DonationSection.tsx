@@ -76,12 +76,12 @@ const DonationSection: React.FC = () => {
 
       <div className="Para">
       <div className={`blessings-container ${expanded ? "expanded" : ""}`}>
-      <h3 className="blessings-title">🙏 Lord Rama's Blessings to Squirrel 🙏</h3>
+      <h3 className="blessings-title">🙏 Lord Ram's Blessings to Squirrel 🙏</h3>
       
       {/* Short Preview */}
       {!expanded && (
         <p className="blessings-preview">
-          Lord Ramachandra, in His determination to regain mother Sita, wanted to cross 
+          Lord Ramchandra, in His determination to regain mother Sita, wanted to cross 
           the ocean to reach Lanka. The ocean-god, Varuna, appeared before Him and said... 
           <span className="read-more-btn" onClick={toggleExpand} onMouseEnter={toggleExpand}>
             Read More ⬎
@@ -93,7 +93,7 @@ const DonationSection: React.FC = () => {
       {expanded && (
         <div className="full-content">
           <p className="blessings-text">
-            Lord Ramachandra, in His determination to regain mother Sita, wanted to cross 
+            Lord Ramchandra, in His determination to regain mother Sita, wanted to cross 
             the ocean to reach Lanka. The ocean-god, Varuna, appeared before the Lord and 
             said, "I will make a special concession for You to cross the ocean. If You make 
             a bridge, I will make it float." Varuna also introduced Nala, a monkey devotee 
@@ -101,7 +101,7 @@ const DonationSection: React.FC = () => {
             talented as Vishwakarma and he agreed to oversee the construction of the bridge.
           </p>
           <p className="blessings-text">
-            Under Rama's direction and Nala's supervision, millions of monkeys, led by 
+            Under Ram's direction and Nala's supervision, millions of monkeys, led by 
             Hanuman, gathered large rocks, boulders, and trees, dumping them into the ocean. 
             By the special potency of Varuna, the rocks thrown in the water floated. The 
             monkeys tied the floating rocks together with heavy ropes and vines.
@@ -110,9 +110,9 @@ const DonationSection: React.FC = () => {
             As Hanuman carried large boulders to throw into the water, a small squirrel 
             carried tiny pebbles to assist in the construction. Hanuman said to the squirrel, 
             "What will your small pebble accomplish compared to our big boulders? Move out of 
-            the way, or you will get hurt." Lord Rama appeared on the scene and rebuked Hanuman, 
+            the way, or you will get hurt." Lord Ram appeared on the scene and rebuked Hanuman, 
             saying, "Both you and the squirrel are doing your best to serve Me. I consider 
-            both services equal in value." Lord Rama compassionately picked up the squirrel 
+            both services equal in value." Lord Ram compassionately picked up the squirrel 
             and ran His fingers across its back. Thus, the three lines were formed on the backs 
             of Indian squirrels.
           </p>
@@ -120,25 +120,25 @@ const DonationSection: React.FC = () => {
           {/* ISKCON Announcement */}
           <h3 className="blessings-title">🙏 The Divine Offering of Food 🙏</h3>
           <p className="blessings-text">
-            Food sustains life, and when it is enriched with the blessings of Lord Ramachandra, 
+            Food sustains life, and when it is enriched with the blessings of Lord Ramchandra, 
             it becomes the greatest boon for the recipients.
           </p>
           <p className="blessings-text">
-            Sri Rama Navami is the best occasion for offering service to Lord Ramachandra and 
+            Sri Ram Navami is the best occasion for offering service to Lord Ramchandra and 
             receiving His unlimited blessings. Among all kinds of offerings, the offering of 
-            prasadam to those who visit the temple on Sri Rama Navami is the highest service.
+            prasadam to those who visit the temple on Sri Ram Navami is the highest service.
           </p>
           <p className="blessings-text">
-            This year, ISKCON will be celebrating Sri Rama Navami on **April 6, 2025**. All 
+            This year, ISKCON will be celebrating Sri Ram Navami on **April 6, 2025**. All 
             visitors to the temple during the **five-day festival from April 2 to April 6, 2025**, 
-            will receive the mercy of Lord Ramachandra in the form of prasadam.
+            will receive the mercy of Lord Ramchandra in the form of prasadam.
           </p>
           <p className="blessings-text">
             The inauguration of Shri Ram Mandir at Shri Ram Janmabhoomi in Ayodhya has inspired 
             people across the world, leading to a massive increase in devotees visiting our temple.
           </p>
           <p className="blessings-text blessings-highlight">
-            We are expecting a large number of devotees to gather at ISKCON Juhu on Sri Rama Navami 
+            We are expecting a large number of devotees to gather at ISKCON Juhu on Sri Ram Navami 
             to take darshan of Sri Sri Sita Ram and receive Their divine blessings.
           </p>
           <p className="blessings-text blessings-highlight">
@@ -183,7 +183,7 @@ const DonationSection: React.FC = () => {
 
       <div className="custome-donation" style={{background:'white',borderRadius:'10px',padding:'50px',marginTop:'10px'}}>
   <h3 style={{marginBottom:'10px'}}>Any other donation</h3>
-  <input type="number" style={{width:'70%',borderRadius:'5px',marginRight:'10px',border:'1px solid',height:'50px',fontSize:'25px',fontWeight:'500',padding:'5px',marginTop:'10px'}} value={selectedPrice} onChange={handleInputChange} placeholder="Enter the Amount"></input>
+  <input type="number" className='amountField' style={{width:'70%',borderRadius:'5px',marginRight:'10px',border:'1px solid',height:'50px',fontSize:'25px',fontWeight:'500',padding:'5px',marginTop:'10px'}} value={selectedPrice} onChange={handleInputChange} placeholder="Enter the Amount"></input>
   <button style={{backgroundColor: '#faa817',color: '#fff',border: 'none',padding: '10px 15px',borderRadius: '5px',cursor: 'pointer',height:'63px',fontSize:'25px',marginTop:'10px'}}  onClick={() => openModalWithAnyPrice()}>Donate</button>
 </div>
 
@@ -205,7 +205,7 @@ const DonationSection: React.FC = () => {
 
   
    
-      <h2 className="meal-donation-title">Rama Navami Kalash Abhishek Donation</h2>
+      <h2 className="meal-donation-title">Ram Navami Kalash Abhishek Donation</h2>
       
       <div className="meal-options">
       
@@ -223,7 +223,7 @@ const DonationSection: React.FC = () => {
       {!expanded && (
         <p className="blessings-preview">
            <p className="blessings-text">
-          The pinnacle of Sri Rama Navami is the maha-abhishek of Sri Sri Sita Rama starting at 6 p.m. on Sunday, April 6, 2025. Milk, curd, ghee, honey and other substances will be used for the Maha-abhishek.
+          The pinnacle of Sri Ram Navami is the maha-abhishek of Sri Sri Sita Ram starting at 6 p.m. on Sunday, April 6, 2025. Milk, curd, ghee, honey and other substances will be used for the Maha-abhishek.
 
           </p>
           
@@ -242,7 +242,7 @@ const DonationSection: React.FC = () => {
          
          
           <p className="blessings-text">
-          By bathing the Deity of Sri Sri Sita Rama on Sri Rama Navami day, one can cleanse all bad influence due to the age of Kali.
+          By bathing the Deity of Sri Sri Sita Ram on Sri Ram Navami day, one can cleanse all bad influence due to the age of Kali.
 
           </p>
           <p className="blessings-text">

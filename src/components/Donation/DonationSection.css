@@ -304,3 +304,9 @@
     margin: 3.5vw;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .amountField{
+    width: 57vw !important;
+  }
+}
